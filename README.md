@@ -1,11 +1,16 @@
-<div align="center">
+# The World Between the Pages — ASOIAF Research Freeze
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Research freeze: 2026-09-16
 
-  <h1>Built with AI Studio</h2>
+This ZIP contains the frozen structured research/data layer plus the revised
+Google AI Studio Master Prompt.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
-
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+IMPORTANT:
+- The previous design prompt has been superseded.
+- The new master prompt is in 15_prompt_pack.md and 16_prompt_pack.json.
+- The landing page is LIGHT MODE by default.
+- The ASOIAF page is also LIGHT MODE by default, with an elegant DARK MODE toggle.
+- The dedicated "One Story, Two Worlds" section has been removed.
+- Adaptation material belongs inside "From Page to Screen".
+- The right-side desktop story timeline and scene-based scroll system are non-negotiable interaction concepts.
+- The data files remain the structured source of truth for the platform.

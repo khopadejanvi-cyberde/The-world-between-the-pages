@@ -1,0 +1,119 @@
+{
+  "world": {
+    "continents": [
+      "Westeros",
+      "Essos"
+    ],
+    "political_frame": "Great Houses and competing claims around the Iron Throne",
+    "supernatural_layer": [
+      "dragons",
+      "the Wall",
+      "the Others",
+      "ancient magic"
+    ],
+    "spoiler_policy": "Systems and relationships only in introductory layer."
+  },
+  "houses": [
+    {
+      "name": "Stark",
+      "region": "North",
+      "seat": "Winterfell"
+    },
+    {
+      "name": "Lannister",
+      "region": "Westerlands",
+      "seat": "Casterly Rock"
+    },
+    {
+      "name": "Targaryen",
+      "region": "historical royal dynasty",
+      "seat": "Dragonstone / historical seats"
+    },
+    {
+      "name": "Baratheon",
+      "region": "Stormlands",
+      "seat": "Storm’s End"
+    },
+    {
+      "name": "Greyjoy",
+      "region": "Iron Islands",
+      "seat": "Pyke"
+    },
+    {
+      "name": "Tyrell",
+      "region": "Reach",
+      "seat": "Highgarden"
+    },
+    {
+      "name": "Martell",
+      "region": "Dorne",
+      "seat": "Sunspear"
+    },
+    {
+      "name": "Arryn",
+      "region": "Vale",
+      "seat": "The Eyrie"
+    },
+    {
+      "name": "Tully",
+      "region": "Riverlands",
+      "seat": "Riverrun"
+    }
+  ],
+  "characters": [
+    {
+      "name": "Jon Snow",
+      "type": "major character / POV or political figure"
+    },
+    {
+      "name": "Daenerys Targaryen",
+      "type": "major character / POV or political figure"
+    },
+    {
+      "name": "Tyrion Lannister",
+      "type": "major character / POV or political figure"
+    },
+    {
+      "name": "Arya Stark",
+      "type": "major character / POV or political figure"
+    },
+    {
+      "name": "Sansa Stark",
+      "type": "major character / POV or political figure"
+    },
+    {
+      "name": "Bran Stark",
+      "type": "major character / POV or political figure"
+    },
+    {
+      "name": "Cersei Lannister",
+      "type": "major character / POV or political figure"
+    },
+    {
+      "name": "Jaime Lannister",
+      "type": "major character / POV or political figure"
+    }
+  ],
+  "locations": [
+    {
+      "name": "Winterfell",
+      "type": "castle"
+    },
+    {
+      "name": "King's Landing",
+      "type": "capital"
+    },
+    {
+      "name": "The Wall",
+      "type": "fortification"
+    },
+    {
+      "name": "Dragonstone",
+      "type": "island fortress"
+    },
+    {
+      "name": "Essos",
+      "type": "continent"
+    }
+  ]
+}

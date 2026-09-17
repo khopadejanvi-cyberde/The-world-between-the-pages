@@ -1,0 +1,102 @@
+[
+  {
+    "id": "V01",
+    "section": "The Books",
+    "purpose": "Show publication span and gaps",
+    "data": [
+      "publication",
+      "chapters",
+      "pages"
+    ],
+    "form": "horizontal timeline + book cards"
+  },
+  {
+    "id": "V02",
+    "section": "Welcome to Westeros",
+    "purpose": "Give a spoiler-light mental map",
+    "data": [
+      "continents",
+      "regions",
+      "houses",
+      "locations"
+    ],
+    "form": "stylized map"
+  },
+  {
+    "id": "V03",
+    "section": "The People",
+    "purpose": "Show networked narrative",
+    "data": [
+      "POV",
+      "houses",
+      "relationships"
+    ],
+    "form": "character constellation"
+  },
+  {
+    "id": "V04",
+    "section": "History Beneath the Story",
+    "purpose": "Show historical depth",
+    "data": [
+      "eras",
+      "events",
+      "dynasties"
+    ],
+    "form": "layered timeline"
+  },
+  {
+    "id": "V05",
+    "section": "Inside the Author’s Head",
+    "purpose": "Connect influences to craft",
+    "data": [
+      "influences",
+      "writing milestones"
+    ],
+    "form": "annotated archive"
+  },
+  {
+    "id": "V06",
+    "section": "From Page to Screen",
+    "purpose": "Show adaptation path",
+    "data": [
+      "rights",
+      "pilot",
+      "seasons"
+    ],
+    "form": "pipeline timeline"
+  },
+  {
+    "id": "V07",
+    "section": "The Numbers",
+    "purpose": "Show measurable scale",
+    "data": [
+      "sales",
+      "bestsellers",
+      "viewers",
+      "awards"
+    ],
+    "form": "small multiples dashboard"
+  },
+  {
+    "id": "V08",
+    "section": "The Cultural Afterlife",
+    "purpose": "Show continuing franchise life",
+    "data": [
+      "spin-offs",
+      "stage",
+      "events"
+    ],
+    "form": "franchise constellation"
+  },
+  {
+    "id": "V09",
+    "section": "Live Westeros",
+    "purpose": "Show verified current developments",
+    "data": [
+      "date",
+      "status",
+      "source"
+    ],
+    "form": "live bulletin"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "name": "The World Between the Pages",
+  "description": "A luxury editorial digital archive and interactive research platform exploring the books behind Game of Thrones (ASOIAF Research Freeze).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

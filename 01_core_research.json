@@ -1,0 +1,76 @@
+{
+  "freeze_date": "2026-09-16",
+  "identity": {
+    "series": "A Song of Ice and Fire",
+    "author": "George R. R. Martin",
+    "tv_adaptation": "Game of Thrones"
+  },
+  "section_order": [
+    {
+      "id": "00",
+      "name": "The Threshold",
+      "purpose": "Curiosity; title/subtitle; minimal exposition."
+    },
+    {
+      "id": "01",
+      "name": "The Books",
+      "purpose": "Five published novels, two forthcoming/planned, publication gaps and book metrics."
+    },
+    {
+      "id": "02",
+      "name": "Welcome to Westeros",
+      "purpose": "Westeros/Essos, Great Houses, locations, political structure, supernatural layer; spoiler-light."
+    },
+    {
+      "id": "03",
+      "name": "The People",
+      "purpose": "Major POV characters, houses, relationships and narrative-network evidence."
+    },
+    {
+      "id": "04",
+      "name": "History Beneath the Story",
+      "purpose": "Long Night, Valyria, Doom, Targaryen rule, Dance of the Dragons, Robert’s Rebellion, main-story starting point."
+    },
+    {
+      "id": "05",
+      "name": "Inside the Author's Head",
+      "purpose": "Origins, influences, historical fiction + epic fantasy, Tolkien, mosaic POV, grey characters."
+    },
+    {
+      "id": "06",
+      "name": "From Page to Screen",
+      "purpose": "HBO option, Benioff/Weiss, pilot, production, 2011 premiere, 2019 conclusion, later divergence."
+    },
+    {
+      "id": "07",
+      "name": "The Numbers",
+      "purpose": "Sales snapshots, bestseller evidence, TV audience and awards, with measurement labels."
+    },
+    {
+      "id": "08",
+      "name": "The Cultural Afterlife",
+      "purpose": "Spin-offs, companion books, stage work, events and fandom infrastructure."
+    },
+    {
+      "id": "09",
+      "name": "Live Westeros",
+      "purpose": "Current/upcoming verified developments with last-verified dates."
+    },
+    {
+      "id": "10",
+      "name": "Choose Your Path",
+      "purpose": "Read / Watch / Explore routes without ranking media."
+    },
+    {
+      "id": "11",
+      "name": "Still Being Written",
+      "purpose": "Five published novels; two remaining main novels still forthcoming/planned as of freeze."
+    }
+  ],
+  "rules": [
+    "Spoiler-light world layer",
+    "Source major claims",
+    "Separate fact/data/interpretation/sentiment",
+    "No fabricated continuity"
+  ]
+}

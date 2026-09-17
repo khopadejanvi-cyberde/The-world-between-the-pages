@@ -1,0 +1,49 @@
+[
+  {
+    "id": "T01",
+    "theme": "Power",
+    "definition": "Authority, succession, institutions and legitimacy.",
+    "evidence": "Great Houses, councils, claims to the Iron Throne.",
+    "author": "Martin frequently frames the series through historical/political realism.",
+    "scholarship": "Medievalism scholarship examines political structures and power.",
+    "visual": "Power network / flow map"
+  },
+  {
+    "id": "T02",
+    "theme": "Moral ambiguity",
+    "definition": "Characters resist simple hero/villain categories.",
+    "evidence": "Multiple POVs create competing interpretations.",
+    "author": "Martin explicitly says grey characters interest him.",
+    "visual": "Multi-perspective character cards"
+  },
+  {
+    "id": "T03",
+    "theme": "History as texture",
+    "definition": "Invented history gives the present accumulated memory.",
+    "evidence": "Dynasties, rebellions and ancient civilizations shape current politics.",
+    "author": "Martin calls historical novel and epic fantasy sisters under the skin.",
+    "visual": "Layered timeline"
+  },
+  {
+    "id": "T04",
+    "theme": "Mosaic narrative",
+    "definition": "A large world is shown through many limited viewpoints.",
+    "evidence": "POV structure expands across five books.",
+    "quantitative": "24 POV characters; 14 major by PNAS study criterion.",
+    "visual": "POV constellation"
+  },
+  {
+    "id": "T05",
+    "theme": "Gender and social roles",
+    "definition": "Characters operate within gendered expectations and constraints.",
+    "scholarship": "Shiloh Carroll directly examines masculinity, femininity and gender relations.",
+    "visual": "Role / agency matrix"
+  },
+  {
+    "id": "T06",
+    "theme": "Sexuality, violence and the body",
+    "definition": "Sex and violence intersect with politics and social structures.",
+    "scholarship": "Carroll treats sexuality as a major interpretive and critical issue.",
+    "visual": "Annotated qualitative layer, not spectacle"
+  }
+]
