@@ -14,7 +14,7 @@ export const Scene11StillBeingWritten: React.FC<Scene11Props> = ({
   return (
     <section
       id="scene-11-still-being-written"
-      className="min-h-screen py-20 px-4 lg:px-12 max-w-5xl mx-auto flex flex-col justify-center text-center items-center"
+      className="min-h-screen py-20 px-4 lg:px-12 max-w-5xl mx-auto flex flex-col justify-center text-center items-center scroll-mt-20"
     >
       {/* Decorative Heraldic Badge */}
       <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--bg-surface)] border border-[var(--border-subtle)] text-xs font-mono uppercase tracking-widest text-[var(--accent-crimson)] shadow-xs mb-6">

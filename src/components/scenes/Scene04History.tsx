@@ -32,7 +32,7 @@ export const Scene04History: React.FC<Scene04Props> = ({ onOpenSource }) => {
   return (
     <section
       id="scene-04-history"
-      className="min-h-screen py-16 px-4 lg:px-12 max-w-7xl mx-auto flex flex-col justify-center"
+      className="min-h-screen py-16 px-4 lg:px-12 max-w-7xl mx-auto flex flex-col justify-center scroll-mt-20"
     >
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">

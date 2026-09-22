@@ -110,7 +110,7 @@ export const Scene10ChooseYourPath: React.FC<Scene10Props> = ({ onSelectScene, o
   return (
     <section
       id="scene-10-choose-path"
-      className="min-h-screen py-16 px-4 lg:px-12 max-w-7xl mx-auto flex flex-col justify-center"
+      className="min-h-screen py-16 px-4 lg:px-12 max-w-7xl mx-auto flex flex-col justify-center scroll-mt-20"
     >
       {/* Header */}
       <div className="text-center mb-10">

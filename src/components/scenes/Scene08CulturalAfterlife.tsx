@@ -54,7 +54,7 @@ export const Scene08CulturalAfterlife: React.FC<Scene08Props> = ({ onOpenSource 
   return (
     <section
       id="scene-08-cultural-afterlife"
-      className="min-h-screen py-16 px-4 lg:px-12 max-w-7xl mx-auto flex flex-col justify-center"
+      className="min-h-screen py-16 px-4 lg:px-12 max-w-7xl mx-auto flex flex-col justify-center scroll-mt-20"
     >
       {/* Header */}
       <div className="mb-8">

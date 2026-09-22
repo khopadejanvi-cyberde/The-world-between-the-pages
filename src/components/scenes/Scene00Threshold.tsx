@@ -1,16 +1,17 @@
 import React from 'react';
-import { ChevronDown, Sparkles } from 'lucide-react';
+import { ChevronDown, Sparkles, ArrowLeft } from 'lucide-react';
 
 interface Scene00Props {
   onExplore: () => void;
   onOpenSources: () => void;
+  onBack?: () => void;
 }
 
-export const Scene00Threshold: React.FC<Scene00Props> = ({ onExplore, onOpenSources }) => {
+export const Scene00Threshold: React.FC<Scene00Props> = ({ onExplore, onOpenSources, onBack }) => {
   return (
     <section
       id="scene-00-threshold"
-      className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-4 py-16 paper-texture"
+      className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-4 py-16 paper-texture scroll-mt-20"
     >
       {/* Decorative Heraldic Motif */}
       <div className="mb-6 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--bg-surface)] border border-[var(--border-subtle)] text-xs font-mono uppercase tracking-widest text-[var(--accent-crimson)] shadow-xs">
@@ -34,6 +35,21 @@ export const Scene00Threshold: React.FC<Scene00Props> = ({ onExplore, onOpenSour
           An interactive archival exploration through the published literature, mosaic viewpoints,
           centuries of history, and the television phenomenon.
         </p>
+
+        {/* Back CTA Button */}
+        {onBack && (
+          <div className="pt-2">
+            <button
+              id="asoiaf-page-back-btn"
+              onClick={onBack}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--border-subtle)] bg-[var(--bg-surface)] hover:bg-[var(--bg-secondary)] hover:border-[var(--accent-crimson)] text-xs font-medium text-[var(--text-primary)] transition-all shadow-xs cursor-pointer"
+              title="Go back to previous page"
+            >
+              <ArrowLeft className="w-3.5 h-3.5 text-[var(--accent-crimson)]" />
+              <span>Back</span>
+            </button>
+          </div>
+        )}
 
         {/* Action Buttons */}
         <div className="pt-6 flex flex-wrap items-center justify-center gap-4">

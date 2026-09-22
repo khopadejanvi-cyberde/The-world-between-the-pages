@@ -2,37 +2,55 @@
 
 @layer base {
   :root {
-    --bg-primary: #F9F7F2;
-    --bg-secondary: #F2ECE1;
+    --bg-primary: #FAF8F5;
+    --bg-secondary: #F4EFE6;
     --bg-surface: #FFFFFF;
-    --bg-card: rgba(255, 255, 255, 0.85);
-    --border-subtle: rgba(180, 160, 140, 0.28);
-    --border-active: rgba(155, 44, 44, 0.45);
+    --bg-card: rgba(255, 255, 255, 0.9);
+    --border-subtle: rgba(180, 165, 150, 0.22);
+    --border-active: rgba(251, 135, 122, 0.5);
     --text-primary: #24201D;
-    --text-secondary: #5E564F;
-    --text-muted: #8A8177;
+    --text-secondary: #5C554E;
+    --text-muted: #8E847A;
     --accent-crimson: #8C2525;
     --accent-crimson-light: #B83A3A;
     --accent-bronze: #8A6840;
     --accent-gold: #A88243;
-    --shadow-soft: 0 4px 20px -2px rgba(60, 45, 30, 0.08);
-    --shadow-elevated: 0 10px 30px -4px rgba(60, 45, 30, 0.12);
+    /* Pastel Palette from pin.it/2I3cLExHQ */
+    --palette-butter: #FFE098;
+    --palette-butter-light: #FFF5D0;
+    --palette-mint: #85E3CD;
+    --palette-coral: #FB877A;
+    --palette-lilac: #CCAAD9;
+    --palette-slate: #ABC5D2;
+    --palette-rose: #DCA0B8;
+    --palette-sage: #B9E6B3;
+    --shadow-soft: 0 4px 20px -2px rgba(60, 45, 30, 0.06);
+    --shadow-elevated: 0 10px 30px -4px rgba(60, 45, 30, 0.1);
   }
 
   .dark {
-    --bg-primary: #121110;
-    --bg-secondary: #1A1816;
-    --bg-surface: #201E1B;
-    --bg-card: rgba(32, 30, 27, 0.9);
-    --border-subtle: rgba(120, 105, 90, 0.22);
-    --border-active: rgba(184, 58, 58, 0.6);
-    --text-primary: #ECE6DE;
-    --text-secondary: #B5ACA1;
-    --text-muted: #7E756B;
+    --bg-primary: #141312;
+    --bg-secondary: #1C1A18;
+    --bg-surface: #22201D;
+    --bg-card: rgba(34, 32, 29, 0.92);
+    --border-subtle: rgba(140, 128, 115, 0.2);
+    --border-active: rgba(251, 135, 122, 0.6);
+    --text-primary: #F8F5F0;
+    --text-secondary: #C4BCB3;
+    --text-muted: #8E847A;
     --accent-crimson: #C0392B;
     --accent-crimson-light: #E74C3C;
     --accent-bronze: #B38F5C;
     --accent-gold: #C9A25D;
+    /* Pastel Palette in Dark Mode */
+    --palette-butter: #FFE098;
+    --palette-butter-light: #FFF5D0;
+    --palette-mint: #85E3CD;
+    --palette-coral: #FB877A;
+    --palette-lilac: #CCAAD9;
+    --palette-slate: #ABC5D2;
+    --palette-rose: #DCA0B8;
+    --palette-sage: #B9E6B3;
     --shadow-soft: 0 4px 24px -2px rgba(0, 0, 0, 0.4);
     --shadow-elevated: 0 12px 36px -4px rgba(0, 0, 0, 0.6);
   }

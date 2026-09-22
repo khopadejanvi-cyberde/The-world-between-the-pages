@@ -118,4 +118,4 @@ export interface SceneMeta {
   purpose: string;
 }
 
-export type ActiveView = 'landing' | 'epic-fantasy' | 'asoiaf-story';
+export type ActiveView = 'landing' | 'epic-fantasy' | 'asoiaf-story' | 'game-of-thrones-editions';

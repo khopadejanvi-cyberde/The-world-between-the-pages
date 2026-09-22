@@ -5,6 +5,7 @@ import { SourceDrawer } from './components/SourceDrawer';
 import { LandingView } from './components/views/LandingView';
 import { EpicFantasyView } from './components/views/EpicFantasyView';
 import { AsoiafStoryView } from './components/views/AsoiafStoryView';
+import { GameOfThronesEditionsView } from './components/views/GameOfThronesEditionsView';
 
 export function App() {
   const [activeView, setActiveView] = useState<ActiveView>('landing');
@@ -13,6 +14,7 @@ export function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
   const [isSourceDrawerOpen, setIsSourceDrawerOpen] = useState<boolean>(false);
   const [highlightSourceId, setHighlightSourceId] = useState<string | null>(null);
+  const [viewHistory, setViewHistory] = useState<ActiveView[]>([]);
 
   useEffect(() => {
     if (darkMode) {
@@ -32,9 +34,62 @@ export function App() {
     setIsSourceDrawerOpen(true);
   };
 
+  const handleNavigate = (newView: ActiveView, sceneId?: string) => {
+    if (newView !== activeView) {
+      setViewHistory((prev) => [...prev, activeView]);
+      setActiveView(newView);
+    }
+    if (sceneId) {
+      setActiveScene(sceneId);
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleBack = () => {
+    if (viewHistory.length > 0) {
+      const prevView = viewHistory[viewHistory.length - 1];
+      setViewHistory((prev) => prev.slice(0, -1));
+      setActiveView(prevView);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      setActiveView('landing');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   const handleSelectAsoiaf = () => {
-    setActiveView('asoiaf-story');
-    setActiveScene('00');
+    handleNavigate('asoiaf-story', '00');
+  };
+
+  const handleOpenGotEditions = () => {
+    handleNavigate('game-of-thrones-editions');
+  };
+
+  const handleSceneChange = (sceneId: string) => {
+    setActiveScene(sceneId);
+    if (activeView === 'asoiaf-story') {
+      const elementIdMap: Record<string, string> = {
+        '00': 'scene-00-threshold',
+        '01': 'scene-01-books',
+        '02': 'scene-02-westeros',
+        '03': 'scene-03-people',
+        '04': 'scene-04-history',
+        '05': 'scene-05-author',
+        '06': 'scene-06-adaptation',
+        '07': 'scene-07-numbers',
+        '08': 'scene-08-cultural-afterlife',
+        '09': 'scene-09-live-westeros',
+        '10': 'scene-10-choose-path',
+        '11': 'scene-11-still-being-written',
+      };
+      const targetId = elementIdMap[sceneId];
+      if (targetId) {
+        const el = document.getElementById(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    }
   };
 
   return (
@@ -42,9 +97,9 @@ export function App() {
       {/* Top Application Header */}
       <Header
         activeView={activeView}
-        setActiveView={setActiveView}
+        setActiveView={(view) => handleNavigate(view)}
         activeScene={activeScene}
-        setActiveScene={setActiveScene}
+        setActiveScene={handleSceneChange}
         darkMode={darkMode}
         setDarkMode={setDarkMode}
         onOpenSources={handleOpenSourceRegistry}
@@ -54,18 +109,18 @@ export function App() {
       <div className="flex-1">
         {activeView === 'landing' && (
           <LandingView
-            onNavigate={(view) => {
-              setActiveView(view);
-              if (view === 'asoiaf-story') setActiveScene('00');
-            }}
+            onNavigate={(view) => handleNavigate(view, view === 'asoiaf-story' ? '00' : undefined)}
             onOpenSources={handleOpenSourceRegistry}
+            onBack={handleBack}
+            canGoBack={viewHistory.length > 0}
           />
         )}
 
         {activeView === 'epic-fantasy' && (
           <EpicFantasyView
             onSelectAsoiaf={handleSelectAsoiaf}
-            onNavigateHome={() => setActiveView('landing')}
+            onNavigateHome={() => handleNavigate('landing')}
+            onBack={handleBack}
           />
         )}
 
@@ -75,6 +130,21 @@ export function App() {
             setActiveScene={setActiveScene}
             onOpenSources={handleOpenSourceRegistry}
             onOpenSourceItem={handleOpenSpecificSource}
+            onOpenGotEditions={handleOpenGotEditions}
+            onBack={handleBack}
+          />
+        )}
+
+        {activeView === 'game-of-thrones-editions' && (
+          <GameOfThronesEditionsView
+            onBackToStory={() => {
+              handleBack();
+              setTimeout(() => {
+                const el = document.getElementById('scene-01-books');
+                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }, 100);
+            }}
+            onNavigateHome={() => handleNavigate('landing')}
           />
         )}
       </div>

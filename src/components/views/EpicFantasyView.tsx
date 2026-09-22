@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { EPIC_FANTASY_COLLECTION } from '../../data/researchData';
-import { Compass, BookOpen, ArrowRight, Sparkles, Filter } from 'lucide-react';
+import { Compass, BookOpen, ArrowRight, ArrowLeft, Sparkles, Filter } from 'lucide-react';
 import { ActiveView } from '../../types';
 
 interface EpicFantasyViewProps {
   onSelectAsoiaf: () => void;
   onNavigateHome: () => void;
+  onBack?: () => void;
 }
 
 export const EpicFantasyView: React.FC<EpicFantasyViewProps> = ({
   onSelectAsoiaf,
   onNavigateHome,
+  onBack,
 }) => {
   const [filterType, setFilterType] = useState<'all' | 'completed' | 'ongoing'>('all');
 
@@ -53,6 +55,19 @@ export const EpicFantasyView: React.FC<EpicFantasyViewProps> = ({
             Ten landmark secondary-world epics that define modern speculative literature.
             Explore overarching mythologies, magic systems, and world architectures.
           </p>
+
+          {/* Back CTA Button below Title Section */}
+          <div className="mt-4">
+            <button
+              id="epic-fantasy-back-btn"
+              onClick={onBack || onNavigateHome}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--border-subtle)] bg-[var(--bg-surface)] hover:bg-[var(--bg-secondary)] hover:border-[var(--accent-crimson)] text-xs font-medium text-[var(--text-primary)] transition-all shadow-xs cursor-pointer"
+              title="Go back to previous page"
+            >
+              <ArrowLeft className="w-3.5 h-3.5 text-[var(--accent-crimson)]" />
+              <span>Back</span>
+            </button>
+          </div>
         </div>
 
         {/* Filter Controls */}
